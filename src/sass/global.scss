@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $desktop-width;
+  padding: 0 10px;
+
+  @include media(1190px) {
+    padding: 0;
+  }
+}
+
+body {
+  font-family: $Roboto;
+  background-color: #ffffff;
+  font-weight: 400;
+  color: $black;
+  letter-spacing: 1px;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//&:active,
+//&:hover,
+//&:focus {
+//  outline: 0;
+//  outline-offset: 0;
+//}
+
+/*
+ * Слой маска
+ */
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.show {
+  display: block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.none__list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

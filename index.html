@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="New Project" />
+  <meta name="description" content="New Project" />
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="wrapper">
+      <address class="header__address header__top-item">
+        Ростов-на-Дону, ул.Улица, 152/4
+      </address>
+      <div class="header__schedule header__top-item">
+        <b>пн-пт</b> - 8:30-17:30, <b>сб, вс</b> - выходные
+      </div>
+      <a class="header__email header__top-item" href="mailto:testtest@yandex.ru">testtest@yandex.ru</a>
+    </div>
+  </div>
+  <div class="header__middle wrapper">
+    <div class="header__logo-cart">
+      <a class="header__logo" href="#">
+        <img src="src/img/logo.svg" alt="">
+      </a>
+      <div class="header__middle-cart-phone">
+        <a class="header__cart" href="#">
+          <span class="header__cart-number">99</span>
+          <span class="header__cart-text">Корзина пуста</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__phones-block">
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+    </div>
+  </div>
+  <div class="header__bottom wrapper">
+    <button class="header__nav-open">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__nav">
+      <div class="header__nav-buttons-block">
+        <button class="header__subnav-close" type="button"><span class="visually-hidden">Закрыть подменю</span></button>
+        <button class="header__nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      </div>
+
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#">Каталог Level 1</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Грузоподъемное оборудование Level 2</a>
+              <ul class="show-nav">
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Инструменты</a>
+            </li>
+            <li>
+              <a href="#">Крепеж</a>
+            </li>
+            <li>
+              <a href="#">Пневматическое оборудование</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Аренда</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Контакты</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </nav>
+<!--    <form class="header__search-form">-->
+<!--      <label>-->
+<!--        <input type="text">-->
+<!--      </label>-->
+<!--      <button type="submit"></button>-->
+<!--    </form>-->
+  </div>
+</header>
+<!--**************** Слои маски **************-->
+<div class="mask"></div>
+<!--  ************ Скрипты ***********-->
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>
