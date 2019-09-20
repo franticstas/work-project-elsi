@@ -11,6 +11,8 @@ $('.header__nav-close').click(function() {
   $('.header__subnav-close').removeClass('level2');
   $('.header__nav-arrow2').removeClass('bottom-nav__item--level3-open');
   $('.header__subnav-close').removeClass('level3');
+  $('.header__nav-arrow3').removeClass('bottom-nav__item--level4-open');
+  $('.header__subnav-close').removeClass('level4');
   $('.mask').removeClass('show');
 });
 
@@ -21,6 +23,8 @@ $('.mask').click(function() {
   $('.header__subnav-close').removeClass('level2');
   $('.header__nav-arrow2').removeClass('bottom-nav__item--level3-open');
   $('.header__subnav-close').removeClass('level3');
+  $('.header__nav-arrow3').removeClass('bottom-nav__item--level4-open');
+  $('.header__subnav-close').removeClass('level4');
   $('.mask').removeClass('show');
 });
 
@@ -53,7 +57,7 @@ $headerNavItems2.each(function () {
 let $headerNavItems3 = $('.header__subnav-list > li > ul li');
 $headerNavItems3.each(function () {
   if ($(this).find('ul').length) {
-    $(this).prepend("<button class='header__nav-arrow2'></button>");
+    $(this).prepend("<button class='header__nav-arrow3'></button>");
     //$(this).children('a').addClass('header-nav__item--arrow');
   }
 });
@@ -64,7 +68,19 @@ $('.header__nav-arrow2').click(function() {
   $('.header__subnav-close').addClass('level3');
 });
 
+//Показ кнопки возврата3
+$('.header__nav-arrow3').click(function() {
+  $(this).addClass('bottom-nav__item--level4-open');
+  $('.header__subnav-close').addClass('level4');
+});
+
 $('.header__subnav-close').click(function() {
+  if ($(this).hasClass('level4')) {
+    $('.header__nav-arrow3').removeClass('bottom-nav__item--level4-open');
+    $('.header__subnav-close').removeClass('level4');
+    return;
+  }
+
   if ($(this).hasClass('level3')) {
     $('.header__nav-arrow2').removeClass('bottom-nav__item--level3-open');
     $('.header__subnav-close').removeClass('level3');
