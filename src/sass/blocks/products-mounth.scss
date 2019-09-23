@@ -1,0 +1,136 @@
+.products-mounth {
+  padding-top: 15px;
+
+  @include tablet {
+    padding-top: 30px;
+  }
+
+  @include desktop {
+    padding-top: 50px;
+  }
+}
+
+.products-mounth .section-title {
+  text-align: center;
+}
+
+.products-mounth__slider {
+  max-width: 234px;
+  overflow: hidden;
+
+  @include media(490px) {
+    max-width: 468px;
+  }
+
+  @include tablet {
+    max-width: 702px;
+  }
+
+  @include media(960px) {
+    max-width: 936px;
+  }
+
+  @include desktop {
+    max-width: 1170px;
+  }
+}
+
+.products-card {
+  padding: 20px;
+  padding-bottom: 10px;
+  max-width: 234px;
+  background-color: #ffffff;
+  border: 1px solid #E6E6E6;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-card__title {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.products-card__text {
+  color: $grey;
+  font-size: 12px;
+  margin-bottom: 30px;
+  max-height: 90px;
+  //text-overflow: ellipsis;
+  overflow: hidden;
+  //white-space: nowrap;
+}
+
+.products-card__text-hover {
+  max-height: 120px;
+  z-index: 5;
+}
+
+.products-card__hover {
+  position: absolute;
+}
+
+.product-brace {
+  width: 234px;
+}
+
+.products-card__price-block {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-card__price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.products-card__price-block button {
+  background-color: $red;
+  border: none;
+  border-radius: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.8788 4.3875C20.7586 4.21522 20.5652 4.10873 20.355 4.09975L7.32855 3.53825C6.9548 3.5219 6.64247 3.81045 6.62649 4.18246C6.61061 4.55434 6.89869 4.86855 7.27066 4.88453L19.4152 5.40805L17.0274 12.8584H6.40101L4.4812 2.40519C4.439 2.17609 4.28171 1.98496 4.06477 1.89985L0.920459 0.664582C0.573915 0.528906 0.182867 0.699123 0.0467685 1.04524C-0.0890949 1.39155 0.0810752 1.78284 0.427431 1.91893L3.22323 3.01726L5.17692 13.6539C5.2358 13.9737 5.51449 14.206 5.83974 14.206H6.16382L5.42379 16.2615C5.36185 16.4337 5.38736 16.6249 5.49277 16.7745C5.59804 16.9242 5.76925 17.0132 5.95201 17.0132H6.47108C6.14944 17.3711 5.95201 17.8424 5.95201 18.3608C5.95201 19.4754 6.85898 20.3821 7.97338 20.3821C9.08778 20.3821 9.99474 19.4754 9.99474 18.3608C9.99474 17.8425 9.79731 17.3711 9.47572 17.0132H13.8828C13.561 17.3711 13.3636 17.8424 13.3636 18.3608C13.3636 19.4754 14.2704 20.3821 15.385 20.3821C16.4997 20.3821 17.4064 19.4754 17.4064 18.3608C17.4064 17.8425 17.209 17.3711 16.8874 17.0132H17.5187C17.8289 17.0132 18.0802 16.7618 18.0802 16.4517C18.0802 16.1415 17.8288 15.8902 17.5187 15.8902H6.75093L7.35727 14.2058H17.5186C17.8117 14.2058 18.0709 14.0165 18.1602 13.7377L20.9676 4.97838C21.0321 4.77846 20.999 4.55988 20.8788 4.3875ZM7.97342 19.2594C7.47795 19.2594 7.07501 18.8565 7.07501 18.361C7.07501 17.8655 7.47795 17.4626 7.97342 17.4626C8.46889 17.4626 8.87179 17.8655 8.87179 18.361C8.87179 18.8565 8.46889 19.2594 7.97342 19.2594ZM15.385 19.2594C14.8895 19.2594 14.4866 18.8565 14.4866 18.361C14.4866 17.8655 14.8895 17.4626 15.385 17.4626C15.8805 17.4626 16.2834 17.8655 16.2834 18.361C16.2834 18.8565 15.8805 19.2594 15.385 19.2594Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 30px;
+}
+
+.products-mounth-prev {
+  background-color: rgba(22, 91, 154, 0.3);
+  width: 40px;
+  height: 30px;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 13L0.999999 7L7 1' stroke='%23ffffff'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+  background-position: center;
+}
+
+.products-mounth-next {
+  background-color: rgba(22, 91, 154, 0.3);
+  width: 40px;
+  height: 30px;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L1 13' stroke='%23ffffff'/%3E%3C/svg%3E%0A");
+}
+
+.products-mounth-prev,
+.products-mounth-next {
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}

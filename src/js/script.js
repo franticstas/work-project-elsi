@@ -120,3 +120,48 @@ if ($(window).width() >= 1170) {
   });
 }
 
+var swiperProductsMounth = new Swiper('.products-mounth__slider', {
+  breakpointsInverse: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px
+    490: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    },
+    960: {
+      slidesPerView: 4,
+      spaceBetween: 0
+    },
+    1170: {
+      slidesPerView: 5,
+      spaceBetween: 0
+    },
+  },
+});
+
+const productBrace = $("<div class='product-brace'/>")
+
+$('.products-card__text').hover(
+  function(){
+    $(this).addClass('products-card__text-hover');
+    $(this).parent().addClass('products-card__hover');
+    $(this).parent().after(productBrace);
+  },
+  function(){
+    $(this).parent().removeClass('products-card__text-hover');
+    $(this).parent().removeClass('products-card__hover');
+    $(".product-brace").remove()
+  }
+);

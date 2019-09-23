@@ -1,0 +1,26 @@
+.top-slider {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-slider .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-slider__title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.top-slider ul {
+
+}
+
+.top-slider a {
+  background-color: orange;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 20px;
+}

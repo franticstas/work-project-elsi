@@ -85,3 +85,14 @@ main {
   margin: 0;
   padding: 0;
 }
+
+.section-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
