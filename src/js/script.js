@@ -93,3 +93,30 @@ $('.header__subnav-close').click(function() {
     return;
   }
 });
+
+if ($(window).width() >= 1170) {
+  //Показ меню второго уровня
+  $( ".header__nav-item" ).on('mouseenter', function() {
+    $(this).children('.header__subnav-list').fadeIn();
+  });
+  $( ".header__nav-item" ).on('mouseleave', function() {
+    $(this).children('.header__subnav-list').fadeOut();
+  });
+
+  //Показ меню третьего уровня
+  $( ".header__subnav-list li" ).on('mouseenter', function() {
+    $(this).children('.header__subnav-list li > ul').fadeIn();
+  });
+  $( ".header__subnav-list li" ).on('mouseleave', function() {
+    $(this).children('.header__subnav-list li > ul').fadeOut();
+  });
+
+  //Добавление стрелки в меню второго уровня
+  let $headerNavItems = $('.header__subnav-list li');
+  $headerNavItems.each(function () {
+    if ($(this).find('ul').length) {
+      $(this).children('a').addClass('arrow-link')
+    }
+  });
+}
+

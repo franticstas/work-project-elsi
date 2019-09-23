@@ -63,6 +63,7 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 15px;
   }
 }
 
@@ -148,7 +149,9 @@
 }
 
 .header__bottom {//Нижний хедер
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav {
@@ -163,14 +166,33 @@
 .header__nav-list {/*Меню первого уровня*/
   padding: 0;
 
-  @include tablet {
+  @include desktop {
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
   }
 }
 
 .header__nav a {
   font-size: 14px;
   color: $black;
+
+  @include desktop {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 17px 25px;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    color: #ffffff;
+    background-color: $red;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
 }
 
 .header__nav-arrow,
@@ -178,21 +200,140 @@
 .header__nav-arrow3,
 .header__nav-open,
 .header__nav-buttons-block {
-  @include tablet {
+  @include desktop {
     display: none;
   }
 }
 
-.header__subnav-list {
-  @include tablet {
+.header__subnav-list {/*Скрытие меню второго уровня*/
+  @include desktop {
     display: none;
+    position: absolute;
+    left: 0;
+    width: 410px;
+    background-color: #ffffff;
+    padding-left: 10px;
   }
 }
 
+.header__subnav-list li > ul {/*Скрытие меню третьего уровня*/
+  @include desktop {
+    display: none;
+    position: absolute;
+    right: -270px;
+    width: 270px;
+    top: 0;
+    background-color: #F2F2F2;
+    padding-left: 10px;
+    height: 100%;
+    border-left: 1px solid #E6E6E6;
+  }
+}
+
+.header__subnav-list li > ul li > ul {/*Скрытие меню четвертого уровня*/
+  @include desktop {
+    display: none;
+    position: absolute;
+    right: -490px;
+    width: 490px;
+    top: 0;
+    background-color: #F2F2F2;
+    padding-left: 10px;
+    height: 100%;
+  }
+}
+
+.header__subnav-list a {
+  @include desktop {
+    display: block;
+    padding-right: 20px;
+    white-space: normal;
+
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+      background-color: transparent;
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+}
+
+.arrow-link {
+  @include desktop {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L1 13' stroke='%23999999'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: 20px;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L1 13' stroke='%232565A0'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+
+.header__search-form {/*Форма поиска*/
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  margin-left: 20px;
+
+  @include desktop {
+    min-width: 250px;
+  }
+}
+
+.header__search-form input {
+  border: 1px solid #B3B3B3;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 30px;
+  padding-left: 5px;
+  padding-right: 25px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border-color: $black;
+  }
+}
+
+.header__search-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.79022 8.87529L7.1795 6.26456C7.6457 5.61188 7.92542 4.81932 7.92542 3.98016C7.92542 1.789 6.15385 0.0174561 3.96272 0.0174561C1.77159 0.0174561 0 1.78902 0 3.98016C0 6.1713 1.77156 7.94286 3.9627 7.94286C4.80186 7.94286 5.59441 7.66314 6.24709 7.19694L8.85782 9.80767C9.09091 10.0408 9.5105 10.0408 9.79022 9.80767C10.0699 9.52797 10.0699 9.15499 9.79022 8.87529ZM3.9627 7.01048C2.28437 7.01048 0.932402 5.65849 0.932402 3.98018C0.932402 2.30186 2.28437 0.949884 3.9627 0.949884C5.64102 0.949884 6.99299 2.30186 6.99299 3.98018C6.99302 5.65849 5.64102 7.01048 3.9627 7.01048Z' fill='%23E72B2B'/%3E%3C/svg%3E%0A");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+
+  &:active {
+    outline: 0;
+    outline-offset: 0;
+    transform: scale(0.8);
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
 /*
 * Стили для мобильного меню
 */
-@media (max-width: 767px) {
+@media (max-width: 1169px) {
   .header__nav ul {
     padding-left: 24px;
     padding-right: 24px;
