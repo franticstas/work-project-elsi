@@ -1,0 +1,149 @@
+.footer {
+  background-color: #F2F2F2;
+  padding-top: 20px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #BFBFBF;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.footer__nav-list {
+  text-align: center;
+  margin-bottom: 10px;
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.footer__nav-item {
+  padding: 5px 0;
+}
+
+.footer__nav-item a {
+  color: $black;
+  font-weight: 500;
+  font-size: 14px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}
+
+.footer__info-block {
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    text-align: left;
+    max-width: 170px;
+    margin: 0 10px;
+  }
+}
+
+.footer__title {
+  color: #595959;
+  margin-bottom: 10px;
+}
+
+.footer address {
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 14px;
+}
+
+.footer__info-block a {
+  color: $black;
+  font-weight: 500;
+  margin: 5px 5px;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 14px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}
+
+.footer__button {
+  margin-bottom: 10px;
+  background-color: $red;
+  border-radius: 3px;
+  max-width: 285px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  max-height: 37px;
+  padding: 8px 0;
+}
+
+.footer__emails {
+  display: none;
+
+  @include media(1000px) {
+    display: block;
+  }
+}
+
+.footer__phones {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.footer__bottom {
+  font-size: 12px;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include desktop {
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
+
+.footer__bottom-left {
+  color: #808080;
+}
+
+.footer__bottom a {
+  color: $red;
+  margin-left: 10px;
+  white-space: nowrap;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}

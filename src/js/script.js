@@ -151,17 +151,17 @@ var swiperProductsMounth = new Swiper('.products-mounth__slider', {
   },
 });
 
-const productBrace = $("<div class='product-brace'/>")
-
-$('.products-card__text').hover(
-  function(){
-    $(this).addClass('products-card__text-hover');
-    $(this).parent().addClass('products-card__hover');
-    $(this).parent().after(productBrace);
-  },
-  function(){
-    $(this).parent().removeClass('products-card__text-hover');
-    $(this).parent().removeClass('products-card__hover');
-    $(".product-brace").remove()
-  }
-);
+// const productBrace = $("<div class='product-brace swiper-slide'/>")
+//
+// $('.products-card__text').hover(
+//   function(){
+//     $(this).addClass('products-card__text-hover');
+//     $(this).parent().addClass('products-card__hover');
+//     $(this).parent().after(productBrace);
+//   },
+//   function(){
+//     $(this).parent().removeClass('products-card__text-hover');
+//     $(this).parent().removeClass('products-card__hover');
+//     $(".product-brace").remove()
+//   }
+// );
