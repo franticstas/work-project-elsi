@@ -165,3 +165,32 @@ var swiperProductsMounth = new Swiper('.products-mounth__slider', {
 //     $(".product-brace").remove()
 //   }
 // );
+
+//Добавление кнопки плюс для каталога
+let $catalogItem = $('.catalog__item > ul > li');
+$catalogItem.each(function () {
+  if ($(this).find('ul').length) {
+    console.log('ddd');
+    $(this).children('a').addClass("catalog__item-plus");
+  }
+});
+
+$(document).ready(function() {
+  //прикрепляем клик по заголовкам acc-head
+  $('.catalog__item-plus').on('click', f_acc);
+});
+
+function f_acc(e) {
+//скрываем все кроме того, что должны открыть
+  $('.catalog__item-plus ul').not($(this).next()).slideUp(700);
+// открываем или скрываем блок под заголовком, по которому кликнули
+  e.preventDefault();
+  $(this).next().slideToggle(700);
+  $(this).toggleClass('catalog__item-minus');
+}
+
+$('.catalog__list').masonry({
+  // options
+  itemSelector: '.catalog__item',
+  columnWidth: 250
+});

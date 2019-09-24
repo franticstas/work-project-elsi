@@ -465,6 +465,9 @@ main {
     .section-title {
       margin-bottom: 30px; } }
 
+.center {
+  text-align: center; }
+
 .header {
   background-color: #ffffff; }
 
@@ -1247,3 +1250,112 @@ main {
     outline: 0;
     outline-offset: 0;
     text-decoration: underline; }
+
+/*
+ * БЛОК ХЛЕБНЫЕ КРОШКИ
+ */
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0; }
+  @media (min-width: 1170px) {
+    .breadcrumbs__list {
+      padding-top: 30px; } }
+
+.breadcrumbs__item {
+  position: relative; }
+
+.breadcrumbs__item:not(:first-child) {
+  margin-left: 5px; }
+  .breadcrumbs__item:not(:first-child)::before {
+    content: "> ";
+    color: #828282;
+    font-size: 13px; }
+
+.breadcrumbs a {
+  color: #404040;
+  font-size: 12px;
+  line-height: 18px; }
+  .breadcrumbs a:hover {
+    text-decoration: none; }
+
+.breadcrumbs__current a {
+  color: #999999;
+  text-decoration: none; }
+
+.catalog__block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.catalog__block a {
+  color: #404040;
+  font-size: 14px; }
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.catalog__item {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 300px; }
+
+.catalog__item > a {
+  color: #E62B2B;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 8px 0;
+  padding-left: 40px;
+  min-height: 30px;
+  background-repeat: no-repeat;
+  background-position: left center; }
+
+.catalog__item > ul {
+  /*Список второго уровня*/
+  margin-left: 24px; }
+
+.catalog__item > ul > li a {
+  min-height: 20px;
+  padding: 5px 0;
+  padding-left: 30px;
+  display: inline-block; }
+
+.catalog__item > ul > li > ul {
+  /*Список третьего уровня*/
+  padding-left: 10px;
+  display: none; }
+
+.catalog__item-plus {
+  position: relative; }
+  .catalog__item-plus:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #F2F2F2;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
+
+.catalog__item-minus:before {
+  background-image: url("../img/icon-minus.svg");
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease; }

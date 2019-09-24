@@ -1,0 +1,43 @@
+/*
+ * БЛОК ХЛЕБНЫЕ КРОШКИ
+ */
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+
+  @include desktop {
+    padding-top: 30px;
+  }
+}
+
+.breadcrumbs__item {
+  position: relative;
+}
+
+.breadcrumbs__item:not(:first-child) {
+  margin-left: 5px;
+
+  &::before {
+    content: "> ";
+    color: #828282;
+    font-size: 13px;
+  }
+}
+
+.breadcrumbs a {
+  color: $black;
+  font-size: 12px;
+  line-height: 18px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.breadcrumbs__current a {
+  color: $grey;
+  text-decoration: none;
+}
