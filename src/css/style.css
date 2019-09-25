@@ -919,8 +919,12 @@ main {
     left: 0; } }
 
 .top-slider {
-  background-size: cover;
-  background-repeat: no-repeat; }
+  display: none; }
+  @media (min-width: 768px) {
+    .top-slider {
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat; } }
 
 .top-slider .wrapper {
   display: -webkit-box;
@@ -945,7 +949,7 @@ main {
   border-radius: 20px; }
 
 .products-mounth {
-  padding: 15px 0; }
+  padding: 15px 5px; }
   @media (min-width: 768px) {
     .products-mounth {
       padding: 30px 0; } }
@@ -957,7 +961,6 @@ main {
   text-align: center; }
 
 .products-mounth__slider {
-  max-width: 234px;
   overflow: hidden; }
   @media (min-width: 490px) {
     .products-mounth__slider {
@@ -970,12 +973,13 @@ main {
       max-width: 936px; } }
   @media (min-width: 1170px) {
     .products-mounth__slider {
-      max-width: 1170px; } }
+      max-width: 1170px;
+      padding: 15px; } }
 
 .products-card {
   padding: 20px;
   padding-bottom: 10px;
-  max-width: 234px;
+  width: 100%;
   background-color: #ffffff;
   border: 1px solid #E6E6E6;
   margin: 0 auto;
@@ -990,6 +994,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.products-card__img-link {
+  text-align: center; }
 
 .products-card__title-link {
   -ms-flex-item-align: baseline;
@@ -1069,6 +1076,57 @@ main {
 .products-mounth-next:focus {
   outline: 0;
   outline-offset: 0; }
+
+.swiper-overflow {
+  overflow: visible; }
+  @media (min-width: 1170px) {
+    .swiper-overflow {
+      overflow: hidden; } }
+
+.swiper-container {
+  /* Чтобы не скакали стрелки, вот отсюда убираем отсуда overflow: hidden, ибо у нас доп. обертка уже есть */ }
+  @media (min-width: 1170px) {
+    .swiper-container {
+      overflow: visible !important; } }
+
+.swiper-overflow.swiper-overflow--hovered {
+  /* Суть хака в добавлении отсутпа и его вычитании */
+  margin-bottom: -1000px;
+  padding-bottom: 1000px; }
+
+.products-card .products-card__text {
+  position: absolute;
+  opacity: 0; }
+  @media (min-width: 1170px) {
+    .products-card .products-card__text {
+      margin: 0;
+      left: -1px;
+      right: -1px;
+      top: 100%;
+      padding: 0 10px 10px 10px;
+      background: #fff;
+      border: 1px solid #E6E6E6;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      -webkit-box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.75);
+              box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.75); } }
+
+@media (min-width: 1170px) {
+  .products-card:hover {
+    z-index: 11;
+    border-bottom: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; } }
+
+@media (min-width: 1170px) {
+  .products-card:hover .products-card__text {
+    opacity: 1;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    margin-bottom: 10px; } }
 
 .advantages {
   background-color: #F2F2F2;
@@ -1298,11 +1356,7 @@ main {
   font-size: 14px; }
 
 .catalog__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  display: grid; }
 
 .catalog__item {
   margin-bottom: 30px;

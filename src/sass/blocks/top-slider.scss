@@ -1,6 +1,11 @@
 .top-slider {
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: none;
+
+  @include tablet {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .top-slider .wrapper {

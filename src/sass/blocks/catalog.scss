@@ -10,8 +10,7 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 }
 
 .catalog__item {

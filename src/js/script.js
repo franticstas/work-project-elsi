@@ -189,8 +189,18 @@ function f_acc(e) {
   $(this).toggleClass('catalog__item-minus');
 }
 
-$('.catalog__list').masonry({
-  // options
-  itemSelector: '.catalog__item',
-  columnWidth: 250
+// $('.catalog__list').masonry({
+//   // options
+//   itemSelector: '.catalog__item',
+//   columnWidth: 250
+// });
+
+// Собственно, сам хак
+$(document).on('mouseenter', '.swiper-wrapper .swiper-slide', function() {
+  //console.log('ddddddd');
+  $(this).closest('.swiper-overflow').addClass("swiper-overflow--hovered");
+});
+
+$(document).on('mouseleave', '.swiper-wrapper .swiper-slide', function() {
+  $(this).closest('.swiper-overflow').removeClass("swiper-overflow--hovered");
 });
