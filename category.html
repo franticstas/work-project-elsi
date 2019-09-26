@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="New Project" />
+  <meta name="description" content="New Project" />
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="wrapper">
+      <address class="header__address header__top-item">
+        Ростов-на-Дону, ул.Улица, 152/4
+      </address>
+      <div class="header__schedule header__top-item">
+        <b>пн-пт</b> - 8:30-17:30, <b>сб, вс</b> - выходные
+      </div>
+      <a class="header__email header__top-item" href="mailto:testtest@yandex.ru">testtest@yandex.ru</a>
+    </div>
+  </div>
+  <div class="header__middle wrapper">
+    <div class="header__logo-cart">
+      <a class="header__logo" href="index.html">
+        <img src="src/img/logo.svg" alt="">
+      </a>
+      <div class="header__middle-cart-phone">
+        <a class="header__cart" href="#">
+          <span class="header__cart-number">99</span>
+          <span class="header__cart-text">Корзина пуста</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__phones-block">
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+    </div>
+  </div>
+  <div class="header__bottom wrapper">
+    <button class="header__nav-open">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__nav">
+      <div class="header__nav-buttons-block">
+        <button class="header__subnav-close" type="button"><span class="visually-hidden">Закрыть подменю</span></button>
+        <button class="header__nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      </div>
+
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#">Каталог</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Грузоподъемное оборудование Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Инструменты</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Крепеж</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Пневматическое оборудование</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+              <ul>
+                <li>
+                  <a href="#">Полимерные материалы Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Аренда</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Контакты</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </nav>
+    <form class="header__search-form">
+      <label>
+        <input type="text">
+      </label>
+      <button type="submit"></button>
+    </form>
+  </div>
+</header>
+<div class="category wrapper">
+  <div class="category__left">
+    <ul class="left-nav__list none__list-style">
+      <li class="left-nav__item">
+        <a href="#">Грузоподъемное оборудование</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Инструменты</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Крепеж</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Пневматическое оборудование</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Полимерные материалы</a>
+        <ul>
+          <li><a href="#">Бетоносмесители</a></li>
+          <li><a href="#">Бадьи для бетона</a></li>
+          <li><a href="#">Вибраторы для бетона</a></li>
+          <li><a href="#">Вибраторы площадочные</a></li>
+          <li><a href="#">Вибропогружатели</a></li>
+          <li><a href="#">Виброрейки</a></li>
+          <li><a href="#">Вибросито</a></li>
+          <li><a href="#">Вибростолы</a></li>
+          <li><a href="#">Растворонасосы</a></li>
+          <li><a href="#">Растворосмесители</a></li>
+          <li><a href="#">Станции прогрева бетона</a></li>
+          <li><a href="#">Тара для раствора</a></li>
+          <li><a href="#">Трансформаторы понижающие</a></li>
+        </ul>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Противопожарное оборудование</a>
+        <ul>
+          <li><a href="#">Бетоносмесители</a></li>
+          <li><a href="#">Бадьи для бетона</a></li>
+          <li><a href="#">Вибраторы для бетона</a></li>
+          <li><a href="#">Вибраторы площадочные</a></li>
+          <li><a href="#">Вибропогружатели</a></li>
+          <li><a href="#">Виброрейки</a></li>
+          <li><a href="#">Вибросито</a></li>
+          <li><a href="#">Вибростолы</a></li>
+          <li><a href="#">Растворонасосы</a></li>
+          <li><a href="#">Растворосмесители</a></li>
+          <li><a href="#">Станции прогрева бетона</a></li>
+          <li><a href="#">Тара для раствора</a></li>
+          <li><a href="#">Трансформаторы понижающие</a></li>
+        </ul>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Расходные материалы</a>
+        <ul>
+          <li><a href="#">Бетоносмесители</a></li>
+          <li><a href="#">Бадьи для бетона</a></li>
+          <li><a href="#">Вибраторы для бетона</a></li>
+          <li><a href="#">Вибраторы площадочные</a></li>
+          <li><a href="#">Вибропогружатели</a></li>
+          <li><a href="#">Виброрейки</a></li>
+          <li><a href="#">Вибросито</a></li>
+          <li><a href="#">Вибростолы</a></li>
+          <li><a href="#">Растворонасосы</a></li>
+          <li><a href="#">Растворосмесители</a></li>
+          <li><a href="#">Станции прогрева бетона</a></li>
+          <li><a href="#">Тара для раствора</a></li>
+          <li><a href="#">Трансформаторы понижающие</a></li>
+        </ul>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Силовая техника</a>
+        <ul>
+          <li><a href="#">Бетоносмесители</a></li>
+          <li><a href="#">Бадьи для бетона</a></li>
+          <li><a href="#">Вибраторы для бетона</a></li>
+          <li><a href="#">Вибраторы площадочные</a></li>
+          <li><a href="#">Вибропогружатели</a></li>
+          <li><a href="#">Виброрейки</a></li>
+          <li><a href="#">Вибросито</a></li>
+          <li><a href="#">Вибростолы</a></li>
+          <li><a href="#">Растворонасосы</a></li>
+          <li><a href="#">Растворосмесители</a></li>
+          <li><a href="#">Станции прогрева бетона</a></li>
+          <li><a href="#">Тара для раствора</a></li>
+          <li><a href="#">Трансформаторы понижающие</a></li>
+        </ul>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Складская техника</a>
+        <ul>
+          <li><a href="#">Бетоносмесители</a></li>
+          <li><a href="#">Бадьи для бетона</a></li>
+          <li><a href="#">Вибраторы для бетона</a></li>
+          <li><a href="#">Вибраторы площадочные</a></li>
+          <li><a href="#">Вибропогружатели</a></li>
+          <li><a href="#">Виброрейки</a></li>
+          <li><a href="#">Вибросито</a></li>
+          <li><a href="#">Вибростолы</a></li>
+          <li><a href="#">Растворонасосы</a></li>
+          <li><a href="#">Растворосмесители</a></li>
+          <li><a href="#">Станции прогрева бетона</a></li>
+          <li><a href="#">Тара для раствора</a></li>
+          <li><a href="#">Трансформаторы понижающие</a></li>
+        </ul>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Средства защиты</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Строительное оборудование</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Станки</a>
+      </li>
+      <li class="left-nav__item">
+        <a href="#">Тепловое оборудование</a>
+      </li>
+    </ul>
+  </div>
+  <div class="category__right">
+    <!--   ******************** ХЛЕБНЫЕ КРОШКИ ***************************-->
+    <div class="breadcrumbs wrapper">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__current">
+          <a>Оборудование для раствора, бетона</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="section-title">Оборудование для раствора, бетона</h1>
+    <main>
+      <ul class="subcategory__list none__list-style">
+        <li class="subcategory__item">
+          <a href="#">Бетоносмесители</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Бадьи для бетона</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Вибраторы для бетона</a
+          ></li>
+        <li class="subcategory__item">
+          <a href="#">Вибраторы площадочные</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Вибропогружатели</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Виброрейки</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Вибросито</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Вибростолы</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Растворонасосы</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Растворосмесители</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Станции прогрева бетона</a>
+        </li>
+        <li class="subcategory__item">
+          <a href="#">Тара для раствора</a>
+        </li>
+      </ul>
+      <section class="category__products-list">
+        <article class="category__products-item">
+          <a class="category__products-img-link" href="#">
+            <img src="src/img/category-product1.jpg" alt="">
+          </a>
+          <a class="category__products-title-link" href="#">
+            <h3>ТСЗИ 1,6 380/42</h3>
+          </a>
+          <div class="category__price-block">
+            <div class="category__price">
+              15 645 р
+            </div>
+            <form>
+              <button><span class="visually-hidden">Добавить в корзину</span></button>
+            </form>
+          </div>
+          <div class="category__products-description">
+            Напряжение вход/выход 3х380/3х42-24 В,
+            мощность 1,4 кВт, вес 27 кг, размер 330х225х300 мм
+          </div>
+        </article>
+        <article class="category__products-item">
+          <a class="category__products-img-link" href="#">
+            <img src="src/img/category-product1.jpg" alt="">
+          </a>
+          <a class="category__products-title-link" href="#">
+            <h3>ТСЗИ 1,6 380/42</h3>
+          </a>
+          <div class="category__price-block">
+            <div class="category__price">
+              15 645 р
+            </div>
+            <form>
+              <button><span class="visually-hidden">Добавить в корзину</span></button>
+            </form>
+          </div>
+          <div class="category__products-description">
+            Напряжение вход/выход 3х380/3х42-24 В,
+            мощность 1,4 кВт, вес 27 кг, размер 330х225х300 мм
+          </div>
+        </article>
+        <article class="category__products-item">
+          <a class="category__products-img-link" href="#">
+            <img src="src/img/category-product1.jpg" alt="">
+          </a>
+          <a class="category__products-title-link" href="#">
+            <h3>ТСЗИ 1,6 380/42</h3>
+          </a>
+          <div class="category__price-block">
+            <div class="category__price">
+              15 645 р
+            </div>
+            <form>
+              <button><span class="visually-hidden">Добавить в корзину</span></button>
+            </form>
+          </div>
+          <div class="category__products-description">
+            Напряжение вход/выход 3х380/3х42-24 В,
+            мощность 1,4 кВт, вес 27 кг, размер 330х225х300 мм
+          </div>
+        </article>
+        <article class="category__products-item">
+          <a class="category__products-img-link" href="#">
+            <img src="src/img/category-product1.jpg" alt="">
+          </a>
+          <a class="category__products-title-link" href="#">
+            <h3>ТСЗИ 1,6 380/42</h3>
+          </a>
+          <div class="category__price-block">
+            <div class="category__price">
+              15 645 р
+            </div>
+            <form>
+              <button><span class="visually-hidden">Добавить в корзину</span></button>
+            </form>
+          </div>
+          <div class="category__products-description">
+            Напряжение вход/выход 3х380/3х42-24 В,
+            мощность 1,4 кВт, вес 27 кг, размер 330х225х300 мм
+          </div>
+        </article>
+        <article class="category__products-item">
+          <a class="category__products-img-link" href="#">
+            <img src="src/img/category-product1.jpg" alt="">
+          </a>
+          <a class="category__products-title-link" href="#">
+            <h3>ТСЗИ 1,6 380/42</h3>
+          </a>
+          <div class="category__price-block">
+            <div class="category__price">
+              15 645 р
+            </div>
+            <form>
+              <button><span class="visually-hidden">Добавить в корзину</span></button>
+            </form>
+          </div>
+          <div class="category__products-description">
+            Напряжение вход/выход 3х380/3х42-24 В,
+            мощность 1,4 кВт, вес 27 кг, размер 330х225х300 мм
+          </div>
+        </article>
+      </section>
+      <div class="category__show-products">
+        <button>+ Показать еще товар</button>
+      </div>
+    </main>
+    <section class="article-text">
+      <h1 class="article-text__title">
+        Классификации вибраторов
+      </h1>
+      <p>
+        Вибратор площадочный (поверхностный вибратор, вибратор общего
+        назначения) представляет собой асинхронный электродвигатель с
+        короткозамкнутым ротором, с установленными на концах вала дебалансами.
+      </p>
+      <p>
+        Конструкция вибратора обеспечивает виброустойчивость статорной
+        обмотки и механическую прочность вала ротора, подшипникового
+        узла и корпусных деталей. Статор электродвигателя встроен в
+        алюминиевый или чугунный литой корпус с коробкой выводов и
+        усиленными элементами крепления к вибромеханизму. Вал ротора
+        опирается на подшипники. Дебалансные регулируемые узлы закрыты
+        защитными кожухами. В коробке выводов установлена клеммная панель
+        для соединения выводов статора с токоподводящим кабелем. Регулирование
+        вынуждающей силы и амплитуды колебаний осуществляется изменением
+        взаиморасположения дебалансов.
+      </p>
+      <p>
+        При вращении ротора электродвигателя возникают круговые
+        колебания вибратора и присоединенного к нему механизма.
+      </p>
+      <p>
+        Для преобразования круговых колебаний в направленные два однотипных
+        вибратора устанавливаются на одной плите с параллельным расположением
+        валов. Вращение роторов электродвигателей вибраторов при их подключении
+        к сети должно быть противоположным, при этом величины установленного
+        статического момента обоих вибраторов суммируются.
+      </p>
+    </section>
+  </div>
+</div>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__top">
+      <ul class="footer__nav-list none__list-style">
+        <li class="footer__nav-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Информация</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Акции</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">О компании</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Гарантии и сервис</a>
+        </li>
+      </ul>
+      <div class="footer__info-block footer__address">
+        <div class="footer__title">Адрес</div>
+        <address>г.Ростов-на-Дону, ул.Доватора, д.152/4</address>
+      </div>
+      <div class="footer__info-block footer__emails">
+        <div class="footer__title">Email</div>
+        <a href="mailto:test@mail.ru">test@mail.ru</a>
+        <a href="mailto:test@mail.ru">test@mail.ru</a>
+      </div>
+      <button class="footer__button">Оформить заказ</button>
+      <div class="footer__info-block footer__phones">
+        <div class="footer__title">Телефоны</div>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        Информация на сайте не является публичной офертой.
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__bottom-right">2019 © Разработка и продвижение сайтов SKgroups</div>
+    </div>
+  </div>
+</footer>
+<!--**************** Слои маски **************-->
+<div class="mask"></div>
+<!--  ************ Скрипты ***********-->
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/masonry.pkgd.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

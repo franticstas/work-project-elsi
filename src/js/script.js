@@ -195,12 +195,23 @@ function f_acc(e) {
 //   columnWidth: 250
 // });
 
-// Собственно, сам хак
+// Хак при наведении на товар в галереи
 $(document).on('mouseenter', '.swiper-wrapper .swiper-slide', function() {
-  //console.log('ddddddd');
   $(this).closest('.swiper-overflow').addClass("swiper-overflow--hovered");
 });
 
 $(document).on('mouseleave', '.swiper-wrapper .swiper-slide', function() {
   $(this).closest('.swiper-overflow').removeClass("swiper-overflow--hovered");
+});
+
+$('.left-nav__item a').click(function(e) {
+  $('.left-nav__item').find('ul').slideUp(700);
+
+  if (!$(this).hasClass('click-link')) {
+    console.log("dddddddd");
+    e.preventDefault();
+    $('.left-nav__item a').removeClass('click-link');
+    $(this).addClass('click-link');
+  }
+  $(this).parent().find('ul').slideToggle(700);
 });
