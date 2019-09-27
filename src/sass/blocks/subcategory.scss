@@ -1,0 +1,293 @@
+.subcategory__left {/*Стилизация фильтров*/
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 300px;
+
+  @include desktop {
+    position: static;
+    border: none;
+    font-size: 14px;
+    padding: 0;
+    transform: none;
+    min-width: auto;
+    width: 270px;
+  }
+}
+
+.products-filter {
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.products-filter__title {
+  font-size: 18px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.products-filter form {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.filter__options {
+  padding: 15px;
+}
+
+.filter__options:not(:first-child) {
+  border-top: 1px solid #E6E6E6;
+}
+
+.filter__options-title {
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  padding-left: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L1 9' stroke='%23999999'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+}
+
+.filter__options-title--open {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L1 9' stroke='%23999999'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+}
+
+.filter__options-hidden {
+  display: none;
+  margin-top: 15px;
+}
+
+.filter__price-diapason {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__price-diapason label {
+  width: 45%;
+}
+
+.filter__price-diapason input {
+  background: #FAFAFA;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 8px;
+  color: $grey;
+}
+
+.options__min-max {
+  display: flex;
+  justify-content: space-between;
+  color: $grey;
+  margin-top: 10px;
+}
+
+.irs--round .irs-handle {
+  border: 2px solid $red;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: $red;
+    border-radius: 50%;
+  }
+}
+
+.irs--round .irs-bar {
+  background-color: $red;
+}
+
+.filter__check-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filter__check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.filter__check-box {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #FAFAFA;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+}
+
+.filter__check-text {
+  padding-left: 30px;
+}
+
+.filter__check-input:checked + .filter__check-box {
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.21053L5.76667 11L14 1' stroke='%23E72B2B' stroke-width='2'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filter__button-block {
+  text-align: center;
+}
+
+.products-filter button {
+  border: 1px solid $red;
+  width: 100%;
+  max-width: 160px;
+  color: $red;
+  padding: 6px 10px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+/*Стилизация сортировки*/
+.subcategory-sort {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background-color: #ffffff;
+  border: 1px solid $grey;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 300px;
+
+  @include desktop {
+    margin-bottom: 30px;
+    position: static;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    transform: none;
+  }
+}
+
+.subcategory-sort__title {
+  font-size: 18px;
+  //margin-bottom: 20px;
+}
+
+.subcategory-sort__hidden {
+  display: none;
+  flex-direction: column;
+  margin-top: 20px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+  }
+}
+
+.sort-select__block {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+.sort-select__title {
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+  @include desktop {
+    margin-right: 10px;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: $black;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #FAFAFA;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  overflow: visible;
+}
+
+.select2-selection__arrow {
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5.5 6L10 1' stroke='%23999999'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.select2-container--open .select2-selection__arrow {
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5.5 6L10 1' stroke='%23999999'/%3E%3C/svg%3E%0A");
+  transform: rotate(180deg);
+}
+
+.select2-selection__arrow b {
+  display: none;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #FAFAFA;
+  color: $red;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #FAFAFA;
+}
+
+.select2-results__option[aria-selected=false] {
+  background-color: #FAFAFA;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  font-size: 14px;
+}

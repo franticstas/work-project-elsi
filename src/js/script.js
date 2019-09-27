@@ -189,12 +189,6 @@ function f_acc(e) {
   $(this).toggleClass('catalog__item-minus');
 }
 
-// $('.catalog__list').masonry({
-//   // options
-//   itemSelector: '.catalog__item',
-//   columnWidth: 250
-// });
-
 // Хак при наведении на товар в галереи
 $(document).on('mouseenter', '.swiper-wrapper .swiper-slide', function() {
   $(this).closest('.swiper-overflow').addClass("swiper-overflow--hovered");
@@ -208,10 +202,63 @@ $('.left-nav__item a').click(function(e) {
   $('.left-nav__item').find('ul').slideUp(700);
 
   if (!$(this).hasClass('click-link')) {
-    console.log("dddddddd");
+    //console.log("dddddddd");
     e.preventDefault();
     $('.left-nav__item a').removeClass('click-link');
     $(this).addClass('click-link');
   }
   $(this).parent().find('ul').slideToggle(700);
+});
+
+//Ползунок в параметрах
+var $optSl = $('.js-range-slider');
+var $minPrice = $('.options__min-price');
+var $maxPrice = $('.options__max-price');
+var $min = $('.options__min');
+var $max = $('.options__max');
+$optSl.ionRangeSlider({
+  hide_from_to: true,
+  hide_min_max: true,
+  skin: "round",
+
+  onStart: function(data) {
+    $minPrice.prop("value", data.from);
+    $maxPrice.prop("value", data.to);
+    $min.text(data.min);
+    $max.text(data.max);
+  },
+  onChange: function(data) {
+    $minPrice.prop("value", data.from);
+    $maxPrice.prop("value", data.to);
+  }
+});
+
+$optSl.ionRangeSlider({
+  from: 300,
+  to: 400
+});
+
+//Открытие / закрытие фильтров
+$('.filter__options-title').click(function() {
+  $(this).next().slideToggle(700);
+  $(this).toggleClass('filter__options-title--open');
+});
+
+//Инициализация кастомного селекта
+$('.select-price').select2({
+  minimumResultsForSearch: -1
+});
+
+if ($(window).width() <= 1169) {
+//Открытие на мобилках сортировки
+  $('.subcategory-sort__title').click(function () {
+    $(this).next().slideToggle(700);
+    //$(this).toggleClass('filter__options-title--open');
+  });
+}
+
+//Открытие на мобилках фильтров
+$('.products-filter__title').click(function() {
+  $(this).next().slideToggle(700);
+  //$(this).toggleClass('filter__options-title--open');
 });

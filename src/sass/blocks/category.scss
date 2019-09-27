@@ -1,10 +1,13 @@
 .category {
   padding: 0 10px;
+  position: relative;
 
   @include desktop {
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -97,6 +100,10 @@
   @include media(440px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include desktop {
     justify-content: flex-start;
   }
 }
