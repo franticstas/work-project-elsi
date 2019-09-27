@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="New Project" />
+  <meta name="description" content="New Project" />
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="wrapper">
+      <address class="header__address header__top-item">
+        Ростов-на-Дону, ул.Улица, 152/4
+      </address>
+      <div class="header__schedule header__top-item">
+        <b>пн-пт</b> - 8:30-17:30, <b>сб, вс</b> - выходные
+      </div>
+      <a class="header__email header__top-item" href="mailto:testtest@yandex.ru">testtest@yandex.ru</a>
+    </div>
+  </div>
+  <div class="header__middle wrapper">
+    <div class="header__logo-cart">
+      <a class="header__logo" href="#">
+        <img src="src/img/logo.svg" alt="">
+      </a>
+      <div class="header__middle-cart-phone">
+        <a class="header__cart" href="#">
+          <span class="header__cart-number">99</span>
+          <span class="header__cart-text">Корзина пуста</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__phones-block">
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+    </div>
+  </div>
+  <div class="header__bottom wrapper">
+    <button class="header__nav-open">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__nav">
+      <div class="header__nav-buttons-block">
+        <button class="header__subnav-close" type="button"><span class="visually-hidden">Закрыть подменю</span></button>
+        <button class="header__nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      </div>
+
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="catalog.html">Каталог</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Грузоподъемное оборудование Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Инструменты</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Крепеж</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Пневматическое оборудование</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+              <ul>
+                <li>
+                  <a href="#">Полимерные материалы Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Аренда</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Контакты</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </nav>
+    <form class="header__search-form">
+      <label>
+        <input type="text">
+      </label>
+      <button type="submit"></button>
+    </form>
+  </div>
+</header>
+<main>
+  <h1></h1>
+  <section class="products-mounth wrapper">
+    <h2 class="section-title">
+      Лучшие товары месяца
+    </h2>
+    <div class="swiper-overflow">
+      <div class="swiper-container products-mounth__slider">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide1.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-1
+              </h3>
+            </a>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b> Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м Конец</b>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide2.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-2
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide3.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант- 3
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide4.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-4
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide5.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-5
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide5.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-6
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide3.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант- 3
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide4.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-4
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide5.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-5
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide5.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-6
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next products-mounth-next"></div>
+        <div class="swiper-button-prev products-mounth-prev"></div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="wrapper">
+      <ul class="advantages__list none__list-style">
+        <li class="advantages__item" style="background-image: url('src/img/icon-price.svg');">Выгодные цены</li>
+        <li class="advantages__item" style="background-image: url('src/img/icon-delivery.svg');">Собственная доставка</li>
+        <li class="advantages__item" style="background-image: url('src/img/icon-choice.svg');">Огромный выбор</li>
+        <li class="advantages__item" style="background-image: url('src/img/icon-goods.svg');">Наличие товара</li>
+        <li class="advantages__item" style="background-image: url('src/img/icon-quality.svg');">Гарантия качества</li>
+      </ul>
+    </div>
+  </section>
+  <section class="products-mounth wrapper">
+    <h2 class="section-title">
+      Выгодные предложения
+    </h2>
+    <div class="swiper-overflow">
+      <div class="swiper-container products-mounth__slider">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide6.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-1
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b> Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide7.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-2
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide8.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант- 3
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide9.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-4
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide10.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-5
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+              высота площадки <b>2,6 м</b>, размер рабочей площадки <b>1,2х1,2 м</b>,
+              размеры секций <b>1,2х1,2 м</b>...
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+          <article class="swiper-slide products-card">
+            <a class="products-card__img-link" href="#">
+              <img src="src/img/product-slide10.jpg" alt="">
+            </a>
+            <a class="products-card__title-link" href="#">
+              <h3 class="products-card__title">
+                Атлант-6
+              </h3>
+            </a>
+            <div class="products-card__text">
+              Количество секций <b>3 шт</b>, высота вышки по ограждению <b>3,8 м</b>,
+            </div>
+            <div class="products-card__price-block">
+              <div class="products-card__price">
+                15 645 р
+              </div>
+              <form>
+                <button><span class="visually-hidden">Добавить в корзину</span></button>
+              </form>
+            </div>
+          </article>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next products-mounth-next"></div>
+        <div class="swiper-button-prev products-mounth-prev"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__top">
+      <ul class="footer__nav-list none__list-style">
+        <li class="footer__nav-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Информация</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Акции</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">О компании</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Гарантии и сервис</a>
+        </li>
+      </ul>
+      <div class="footer__info-block footer__address">
+        <div class="footer__title">Адрес</div>
+        <address>г.Ростов-на-Дону, ул.Доватора, д.152/4</address>
+      </div>
+      <div class="footer__info-block footer__emails">
+        <div class="footer__title">Email</div>
+        <a href="mailto:test@mail.ru">test@mail.ru</a>
+        <a href="mailto:test@mail.ru">test@mail.ru</a>
+      </div>
+      <button class="footer__button">Оформить заказ</button>
+      <div class="footer__info-block footer__phones">
+        <div class="footer__title">Телефоны</div>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        Информация на сайте не является публичной офертой.
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__bottom-right">2019 © Разработка и продвижение сайтов SKgroups</div>
+    </div>
+  </div>
+</footer>
+<!--**************** Слои маски **************-->
+<div class="mask"></div>
+<!--  ************ Скрипты ***********-->
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

@@ -802,7 +802,7 @@ main {
     transition: all 0.3s ease;
     position: fixed;
     height: 100%;
-    z-index: 3;
+    z-index: 6;
     top: 0;
     left: -330px; }
   .header__nav-list {
@@ -1716,20 +1716,36 @@ main {
   text-transform: uppercase;
   font-weight: 500; }
 
+.subcategory .section-title {
+  margin-bottom: 130px; }
+  @media (min-width: 768px) {
+    .subcategory .section-title {
+      margin-bottom: 80px; } }
+  @media (min-width: 1170px) {
+    .subcategory .section-title {
+      margin-bottom: 30px; } }
+
 .subcategory__left {
   /*Стилизация фильтров*/
   display: block;
   position: absolute;
-  top: 50px;
+  top: 130px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 4;
+  z-index: 1;
   background-color: #ffffff;
   border: 1px solid #999999;
   border-radius: 5px;
   padding: 10px;
-  min-width: 300px; }
+  min-width: 300px;
+  max-width: 300px; }
+  @media (min-width: 768px) {
+    .subcategory__left {
+      top: 80px;
+      -webkit-transform: none;
+              transform: none;
+      left: 320px; } }
   @media (min-width: 1170px) {
     .subcategory__left {
       position: static;
@@ -1741,10 +1757,11 @@ main {
       min-width: auto;
       width: 270px; } }
 
-.products-filter {
-  border: 1px solid #E6E6E6;
-  border-radius: 5px;
-  padding-bottom: 15px; }
+@media (min-width: 1170px) {
+  .products-filter {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding-bottom: 15px; } }
 
 .products-filter__title {
   font-size: 18px; }
@@ -1896,16 +1913,21 @@ main {
 /*Стилизация сортировки*/
 .subcategory-sort {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 5;
+  z-index: 1;
   background-color: #ffffff;
   border: 1px solid #999999;
   border-radius: 5px;
   padding: 10px;
   min-width: 300px; }
+  @media (min-width: 768px) {
+    .subcategory-sort {
+      left: 10px;
+      -webkit-transform: none;
+              transform: none; } }
   @media (min-width: 1170px) {
     .subcategory-sort {
       margin-bottom: 30px;

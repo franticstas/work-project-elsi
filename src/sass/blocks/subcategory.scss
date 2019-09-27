@@ -1,15 +1,34 @@
+.subcategory .section-title {
+  margin-bottom: 130px;
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+  }
+}
+
 .subcategory__left {/*Стилизация фильтров*/
   display: block;
   position: absolute;
-  top: 50px;
+  top: 130px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 4;
+  z-index: 1;
   background-color: #ffffff;
   border: 1px solid #999999;
   border-radius: 5px;
   padding: 10px;
   min-width: 300px;
+  max-width: 300px;
+
+  @include tablet {
+    top: 80px;
+    transform: none;
+    left: 320px;
+  }
 
   @include desktop {
     position: static;
@@ -23,9 +42,12 @@
 }
 
 .products-filter {
-  border: 1px solid #E6E6E6;
-  border-radius: 5px;
-  padding-bottom: 15px;
+
+  @include desktop {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding-bottom: 15px;
+  }
 }
 
 .products-filter__title {
@@ -189,15 +211,20 @@
 /*Стилизация сортировки*/
 .subcategory-sort {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 1;
   background-color: #ffffff;
   border: 1px solid $grey;
   border-radius: 5px;
   padding: 10px;
   min-width: 300px;
+
+  @include tablet {
+    left: 10px;
+    transform: none;
+  }
 
   @include desktop {
     margin-bottom: 30px;
