@@ -262,3 +262,67 @@ $('.products-filter__title').click(function() {
   $(this).next().slideToggle(700);
   //$(this).toggleClass('filter__options-title--open');
 });
+
+if ($(window).width() >= 768) {
+  //Табы в товаре
+  var tabCtrl = '.tab-control';
+  var tabCont = '.tab-container';
+//если нужно сделать по умолчанию активный таб, то задаем тут его индекс, иначе пишем 'false' (дада, именно в кавычках строкой)
+  var defaultActive = 1;
+
+  function tabActive(tabIndex) {
+    if($(tabCtrl+' .item[data-tab='+tabIndex+']').hasClass('activeTab')) {
+      return false;
+    }
+    $(tabCtrl).find('.item').removeClass('activeTab');
+    $(tabCont).hide().removeClass('activeTabCont');
+    $(tabCont+'[data-tab='+tabIndex+']').fadeIn().addClass('activeTabCont');
+    $(tabCtrl+' .item[data-tab='+tabIndex+']').addClass('activeTab');
+  }
+  function tabInit() {
+    if (defaultActive == 'false') {
+      return false;
+    }
+    tabActive(defaultActive);
+  }
+  $(tabCtrl).find('.item').click(function(event) {
+    var tabIndex = $(this).data('tab');
+    tabActive(tabIndex)
+  });
+  tabInit();
+//tabs end
+}
+
+if ($(window).width() <= 767) {
+//Аккордеон в карточке товара
+  $(document).ready(function() {
+    //прикрепляем клик по заголовкам acc-head
+    $('.product__tab-title').on('click', f_acc_Product);
+  });
+
+  function f_acc_Product(){
+//скрываем все кроме того, что должны открыть
+    $('.product__tab-hidden').not($(this).next()).slideUp(1000);
+// открываем или скрываем блок под заголовоком, по которому кликнули
+
+    $(this).next().slideToggle(1000);
+    $('.product__tab-title').removeClass('product__tab-title--active');
+    $(this).toggleClass('product__tab-title--active');
+  }
+}
+
+//Плюс минус количество товаров
+$('.minus').click(function () {
+  var $input = $(this).parent().find('input');
+  var count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
+});
+$('.plus').click(function () {
+  var $input = $(this).parent().find('input');
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
+});
