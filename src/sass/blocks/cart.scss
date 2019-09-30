@@ -98,3 +98,17 @@ cart-page form {
   color: #FFFFFF;
   width: 240px;
 }
+
+.cart-page table td.cart-page__total-amount {
+  text-align: left;
+
+  @include tablet {
+    text-align: right;
+  }
+}
+
+.cart-page__total-amount span {
+  color: $red;
+  font-size: 24px;
+  font-weight: 500;
+}
