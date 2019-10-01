@@ -1,0 +1,70 @@
+.stoks-page {
+
+}
+
+.stocks__list {
+
+}
+
+.stocks__item {
+  padding: 15px 0;
+
+  @include tablet {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.stocks__item:not(:last-child) {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.stocks__img-block {
+  text-align: center;
+}
+
+.stocks__img-block img {
+
+}
+
+.stocks__text-block {
+
+}
+
+.stocks__text-block h2 {
+  font-size: 18px;
+}
+
+.stocks-page .section-title {
+  text-align: center;
+}
+
+.stocks__item .text-block {
+  line-height: 150%;
+}
+
+.stocks__product-link {
+  position: relative;
+  color: $red;
+  padding-right: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6.5 6.5L1 12' stroke='%23E72B2B'/%3E%3C/svg%3E%0A");
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}

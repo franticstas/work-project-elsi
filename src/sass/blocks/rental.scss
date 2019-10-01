@@ -7,6 +7,7 @@
 
   @include desktop {
     justify-content: flex-start;
+    margin-bottom: 50px;
   }
 }
 
@@ -118,4 +119,30 @@
     left: 0;
     border-radius: 50%;
   }
+}
+
+.rental-page__conditions {
+  @include desktop {
+    position: relative;
+    padding-right: 580px;
+    min-height: 420px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 420px;
+      height: 100%;
+      top: 0;
+      right: 60px;
+      background-image: url("../img/rental-bg.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+}
+
+.rental-page__conditions-title {
+  color: $red;
+  margin-bottom: 30px;
 }
