@@ -2479,10 +2479,10 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0;
   list-style: none; }
 
-.text-block li {
+.text-block ul li {
   position: relative;
   padding-left: 15px; }
-  .text-block li::before {
+  .text-block ul li::before {
     position: absolute;
     content: "";
     width: 5px;
@@ -2560,3 +2560,17 @@ input[type=number]::-webkit-outer-spin-button {
     outline: 0;
     outline-offset: 0;
     text-decoration: underline; }
+
+@media (min-width: 1170px) {
+  .guarantee-page__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media (min-width: 1170px) {
+  .guarantee-page__left,
+  .guarantee-page__right {
+    width: 48%; } }

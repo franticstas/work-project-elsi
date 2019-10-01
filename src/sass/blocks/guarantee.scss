@@ -1,0 +1,17 @@
+.guarantee-page {
+
+}
+
+.guarantee-page__blocks {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.guarantee-page__left,
+.guarantee-page__right {
+  @include desktop {
+    width: 48%;
+  }
+}
