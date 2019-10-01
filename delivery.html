@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="New Project" />
+  <meta name="description" content="New Project" />
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="wrapper">
+      <address class="header__address header__top-item">
+        Ростов-на-Дону, ул.Улица, 152/4
+      </address>
+      <div class="header__schedule header__top-item">
+        <b>пн-пт</b> - 8:30-17:30, <b>сб, вс</b> - выходные
+      </div>
+      <a class="header__email header__top-item" href="mailto:testtest@yandex.ru">testtest@yandex.ru</a>
+    </div>
+  </div>
+  <div class="header__middle wrapper">
+    <div class="header__logo-cart">
+      <a class="header__logo" href="#">
+        <img src="src/img/logo.svg" alt="">
+      </a>
+      <div class="header__middle-cart-phone">
+        <a class="header__cart" href="#">
+          <span class="header__cart-number">99</span>
+          <span class="header__cart-text">Корзина пуста</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__phones-block">
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+      <a href="tel:+7 (111) 111-11-11">+7 (111) 111-11-11</a>
+    </div>
+  </div>
+  <div class="header__bottom wrapper">
+    <button class="header__nav-open">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__nav">
+      <div class="header__nav-buttons-block">
+        <button class="header__subnav-close" type="button"><span class="visually-hidden">Закрыть подменю</span></button>
+        <button class="header__nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      </div>
+
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="catalog.html">Каталог</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Грузоподъемное оборудование Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Инструменты</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Крепеж</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Пневматическое оборудование</a>
+              <ul>
+                <li>
+                  <a href="#">Сварочное оборудование и зарядные устройства Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+            </li>
+            <li>
+              <a href="#">Полимерные материалы</a>
+              <ul>
+                <li>
+                  <a href="#">Полимерные материалы Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Сварочные инверторы Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Сварочные полуавтоматы</a>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#">Маски сварщика</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+                <li>
+                  <a href="#">Пример 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Аренда</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Контакты</a>
+          <ul class="header__subnav-list">
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+              <ul>
+                <li>
+                  <a href="#">Level 3</a>
+                  <ul>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Level 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+                <li>
+                  <a href="#">Level 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Level 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </nav>
+    <form class="header__search-form">
+      <label>
+        <input type="text">
+      </label>
+      <button type="submit"></button>
+    </form>
+  </div>
+</header>
+<!--   ******************** ХЛЕБНЫЕ КРОШКИ ***************************-->
+<div class="breadcrumbs wrapper">
+  <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a href="#">Главная</a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__current">
+      <a>Гарантия и сервис</a>
+    </li>
+  </ul>
+</div>
+<main>
+  <section class="guarantee-page wrapper">
+    <h1 class="section-title">Гарантия и сервис</h1>
+    <div class="guarantee-page__blocks text-block">
+      <div class="guarantee-page__left">
+        <p>
+          Мы поддерживаем гарантию по паспорту изделия на всё оборудование.
+          В компании есть собственный сервисный центр, где вы можете сделать
+          диагностику поломки и отремонтировать оборудование, а также приобрести
+          необходимые запчасти и расходники.
+        </p>
+        <p>
+          <strong>
+            В случае обнаружения неисправностей Вы можете сдать на диагностику и ремонт:
+          </strong>
+        </p>
+        <ul>
+          <li>бетоносмесители,</li>
+          <li>виброплиты,</li>
+          <li>вибротрамбовки,</li>
+          <li>станки для резки и гибки арматуры,</li>
+          <li>окрасочные аппараты мембранного и поршневого типа,</li>
+          <li>компрессоры,</li>
+          <li>фасадные подъемники,</li>
+          <li>монтажные пистолеты,</li>
+          <li>молотки отбойные пневматические,</li>
+          <li>машины для отделки полов</li>
+        </ul>
+      </div>
+      <div class="guarantee-page__right">
+        <p>Принимаем оборудование в собранном и чистом виде.</p>
+        <p>
+          <strong>
+            Необходимые документы:
+          </strong>
+        </p>
+        <ol>
+          <li>Скачайте и заполните акт рекламации и заверьте его печатью организации;</li>
+          <li>Паспорт изделия с отметками и гарантийный талон;</li>
+          <li>Кассовый чек или копия товарной накладной.</li>
+        </ol>
+        <p>
+          В случае обнаружения неисправностей Вы можете сдать на диагностику и ремонт:
+        </p>
+        <ul>
+          <li>бетоносмесители,</li>
+          <li>растворонасосы,</li>
+          <li>установки приема и выдачи раствора,</li>
+          <li>отбойные молотки МОП(ТЗК), МО(ТЭМЗ),</li>
+          <li>штукатурные станции,</li>
+          <li>штукатурные и малярные агрегаты производства завода КСОМ (Беларусь)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__top">
+      <ul class="footer__nav-list none__list-style">
+        <li class="footer__nav-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Информация</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Акции</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">О компании</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Гарантии и сервис</a>
+        </li>
+      </ul>
+      <div class="footer__info-block footer__address">
+        <div class="footer__title">Адрес</div>
+        <address>г.Ростов-на-Дону, ул.Доватора, д.152/4</address>
+      </div>
+      <div class="footer__info-block footer__emails">
+        <div class="footer__title">Email</div>
+        <a href="mailto:test@mail.ru">test@mail.ru</a>
+        <a href="mailto:test@mail.ru">test@mail.ru</a>
+      </div>
+      <button class="footer__button">Оформить заказ</button>
+      <div class="footer__info-block footer__phones">
+        <div class="footer__title">Телефоны</div>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+        <a href="tel:+7 (863) 241-71-16">+7 (863) 241-71-16</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        Информация на сайте не является публичной офертой.
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__bottom-right">2019 © Разработка и продвижение сайтов SKgroups</div>
+    </div>
+  </div>
+</footer>
+<!--**************** Слои маски **************-->
+<div class="mask"></div>
+<!--  ************ Скрипты ***********-->
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/ion.rangeSlider.min.js"></script>
+<script src="src/js/select2.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

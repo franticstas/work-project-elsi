@@ -6,6 +6,7 @@
   @include desktop {
     display: flex;
     justify-content: space-between;
+
   }
 }
 
@@ -13,5 +14,22 @@
 .guarantee-page__right {
   @include desktop {
     width: 48%;
+  }
+}
+
+.guarantee-page__right ul.advantages__list {
+  list-style: none;
+  justify-content: center;
+
+}
+
+.guarantee-page__right ul.advantages__list li {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  min-width: auto;
+
+  &::before {
+    background-color: transparent;
   }
 }
