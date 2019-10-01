@@ -25,6 +25,14 @@
 .catalog__block a {
   color: $black;
   font-size: 14px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
 }
 
 .catalog__list {

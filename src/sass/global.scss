@@ -126,3 +126,35 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.text-block {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.text-block ul {
+  padding: 0;
+  list-style: none;
+}
+
+.text-block ul li {
+  position: relative;
+  padding-left: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: $red;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 50%;
+  }
+}
+
+.text-block h2 {
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -201,12 +201,13 @@ $(document).on('mouseleave', '.swiper-wrapper .swiper-slide', function() {
 $('.left-nav__item a').click(function(e) {
   $('.left-nav__item').find('ul').slideUp(700);
 
-  if (!$(this).hasClass('click-link')) {
-    //console.log("dddddddd");
+  if (!$(this).hasClass('click-link') && $(this).parent().find('ul').length) {
+    console.log("dddddddd");
     e.preventDefault();
     $('.left-nav__item a').removeClass('click-link');
     $(this).addClass('click-link');
   }
+
   $(this).parent().find('ul').slideToggle(700);
 });
 

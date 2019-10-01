@@ -90,14 +90,25 @@
   margin-bottom: 10px;
   background-color: $red;
   border-radius: 3px;
+  border: 1px solid $red;
   max-width: 285px;
   width: 100%;
   color: #ffffff;
   font-weight: 500;
   font-size: 18px;
-  border: none;
   max-height: 37px;
   padding: 8px 0;
+  display: inline-block;
+  text-align: center;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: transparent;
+    color: $red;
+  }
 }
 
 .footer__emails {

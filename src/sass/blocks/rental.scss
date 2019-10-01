@@ -94,33 +94,6 @@
   display: inline-block;
 }
 
-.text-block {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.text-block ul {
-  padding: 0;
-  list-style: none;
-}
-
-.text-block ul li {
-  position: relative;
-  padding-left: 15px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 5px;
-    height: 5px;
-    background-color: $red;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    border-radius: 50%;
-  }
-}
-
 .rental-page__conditions {
   @include desktop {
     position: relative;

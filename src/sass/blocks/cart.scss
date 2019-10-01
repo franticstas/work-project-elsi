@@ -55,6 +55,14 @@ cart-page form {
   @include desktop {
     margin-right: 40px;
   }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
 }
 
 .cart__buttons-block {
@@ -87,6 +95,15 @@ cart-page form {
   @include tablet {
     margin-bottom: 0;
   }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid $red;
+    background-color: transparent;
+  }
 }
 
 .cart__buttons-block button {
@@ -97,6 +114,17 @@ cart-page form {
   padding: 13px 20px;
   color: #FFFFFF;
   width: 240px;
+  cursor: pointer;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid $red;
+    background-color: transparent;
+    color: $red;
+  }
 }
 
 .cart-page table td.cart-page__total-amount {
